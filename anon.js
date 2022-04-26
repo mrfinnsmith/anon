@@ -228,7 +228,7 @@ function inspect(account, edit) {
         && account.whitelist[edit.wikipedia][edit.page]) {
       status = getStatus(edit, edit.user, account.template)
       sendStatus(account, status, edit)
-    } else if (account.ranges && edit.anonymous) {
+    } /*else if (account.ranges && edit.anonymous) {
       for (let name in account.ranges) {
         const ranges = account.ranges[name]
         if (isIpInAnyRange(edit.user, ranges)) {
@@ -236,7 +236,7 @@ function inspect(account, edit) {
           sendStatus(account, status, edit)
         }
       }
-    }
+    } */
   }
 }
 
