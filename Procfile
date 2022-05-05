@@ -1,1 +1,1 @@
-web: node anon.js
+worker: node anon.js
